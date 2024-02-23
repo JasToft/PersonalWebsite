@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jason Toft Portfolio Homepage</title>
+    <link rel="stylesheet" href="indexstyle.css">
+    <script src="https://kit.fontawesome.com/a88fdf292d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></a></li>
+                <li><a href="#About">About</a></a></li>
+                <li><a href="#Experience">Experience</a></a></li>
+                <li><a href="#Projects">Projects</a></a></li>
+                <li><a href="#Contact">Contact</a></a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Biomedical Engineer</p>
+            <h1>Hi, I'm <span>Jason Toft</span>,<br> a student at UWaterloo.</h1>
+        </div>
+    </div>
+</div>
+
+<!---------------------About------------------------>
+<div id="About">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/picforabout.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About</h1>
+                <p>I am an enthusiastic and driven student who loves learning new skills and gaining new 
+                    experiences. I will complete my first two academic terms at the University of Waterloo 
+                    in April 2024. I am actively pursuing a co-op in the field of biomedical engineering for 
+                    May-August 2024. Software development for biomedical applications is a particular interest 
+                    of mine. I am a leader who thrives in a team environment and values strong communication.
+                </p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Coding</span><br>Object-Oriented Programming and Website Development</li>
+                        <li><span>Modeling</span><br>3D Modeling Using SolidWorks and 3D Printing</li>
+                        <li><span>Design</span><br>Product Developement and Life-Cycle Analysis</li>
+                        <li><span>Interpersonal</span><br>Strong Presentation, Collaboration, Communication and Leadership Skills</li>
+                    </ul>
+                </div>  
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>University of Waterloo</span><br>Biomedical Engineering, Honours Co-op <br>- Excellent Academic Standing</br></li>
+                        <li><span>Sir Frederick Banting Secondary School</span><br>Specialist High Skills Major in Business <br>- Governor General's Award</br></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<!----------------------------------Projects------------------------------------->
+<div id="Projects">
+    <div class="container">
+        <h1 class="sub-title">Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/carboncapturedevice.png">
+                <div class="layer">
+                    <h3>OpenAir</h3>
+                    <p>A carbon capture device for the annual OpenAir competition.
+                    </p>
+                    <a href="project.html#openair"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/300x360.png">
+                <div class="layer">
+                    <h3>Biotron</h3>
+                    <p>EMGs, Conductive Fabric, and Arduino all in one biosleeve!
+                    </p>
+                    <a href="project.html#biotron"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/owlwithborders.png">
+                <div class="layer">
+                    <h3>SolidWorks Owl</h3>
+                    <p>Meet Kharl the 3D printed, SolidWorks-designed, Great Horned Owl! His 9 unique parts 
+                        and moving mechanism allow the flapping of his wings when his head is rotated.
+                    </p>
+                    <a href="project.html#kharl"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/helifront.png">
+                <div class="layer">
+                    <h3>SolidWorks Helicopter</h3>
+                    <p>A 9-part SolidWorks assembly with a section view, BOM, and exploded diagram.
+                    </p>
+                    <a href="project.html#Helicopter"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/stepngo.png">
+                <div class="layer">
+                    <h3>Step N' Go</h3>
+                    <p>An accessible hands-free door opener for individuals with carpal tunnel syndrome.
+                    </p>
+                    <a href="project.html#stepngo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">  
+                <img src="images/ultrasound.png">
+                <div class="layer">
+                    <h3>Ultrasound Data Software</h3>
+                    <p>An object-oriented program that takes in ultrasound data and outputs a csv file.
+                    </p>
+                    <a href="project.html#amode"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!----------------------------------Experience------------------------------------->
+<div id="Experience">
+    <div class="container">
+        <h1 class="sub-title">Work Experience</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-syringe"></i>
+                <h2>Clinical Assistant</h2>
+                <p>Employment at the Thompson Medical Centre afforded me ample opportunity to interact 
+                with medical equipment and patients, and conduct research projects. <br><br><br>
+                </p>
+                <a href="experience.html#tmc">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-cart-shopping"></i>
+                <h2>Customer Service</h2>
+                <p>Part-time work as a customer service representative at Farm Boy Inc. supported growth 
+                    in organization, attention to detail, and teamwork skills. I also had the pleasure of aiding 
+                    customers locate items. <br><br></p>
+                <a href="experience.html#farmboy">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-user-tie"></i>
+                <h2>Event Planner</h2>
+                <p>Volunteering with Youth Organizing Leadership Opportunities gave me the opportunity to 
+                    encourage youth engagement during the pandemic through the planning, promoting, running, 
+                    and hosting of events for the community. 
+                </p>
+                <a href="experience.html#yolo">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!----------------------------------Contact------------------------------------->
+<div id="Contact">
+    <div class="container">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>j2toft@uwaterloo.ca</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/jasontoft"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.github.com/jastoft"><i class="fa-brands fa-github"></i></i></a>
+
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Jason Toft </p>
+    </div>
+</div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+    
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu")
+
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+
+    function closemenu(){
+        sidemenu.style.right="-200px";
+    }
+</script>
+
+</body>
+</html>

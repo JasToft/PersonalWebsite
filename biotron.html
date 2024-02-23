@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jason Toft Portfolio Biotron</title>
+    <link rel="stylesheet" href="projectstyle.css">
+    <script src="https://kit.fontawesome.com/a88fdf292d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/actuallogo.png" class="logo">
+            <ul id="sidemenu">
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <h1>Biotron -  An EMG Fabric Biosleeve</h1>
+        </div>
+    </div>
+</div>
+
+<!---------------------About------------------------>
+<div id="About">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/carboncapturedevice.png">
+            </div>
+            <div class="about-col-2">
+                <p><b>Biotron</b> is a design team at the Univeristy of Waterloo where we make biomechatronic
+                    devices to aid specific individuals or to advance the accessibility of biomedical devices.
+                    I am a part of the EMG Fabric subteam, where we are creating a heart-monitoring and gesture 
+                    recognition sleeve. 
+                </p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Contributions</p>
+                    <p class="tab-links" onclick="opentab('education')">Skills Used</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li>Brainstorming product designs and features</li>
+                        <li>Researching proper techniques</li>
+                        <li>Creating a BOM and performing a complete life cycle analysis of the system using SimaPro</li>
+                        <li>Programmed a multiplexer to consolidate Arduino signals from various sources</li>
+                        <li>Modeling and 3D printing a tube fitting using SolidWorks</li>
+
+                    </ul>
+                </div>  
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li>Arduino code</li>
+                        <li>Electronic Theory</li>
+                        <li>Excel Data Plotting</li>
+                        <li>Laser Cutting</li>
+                        <li>Excel Data Plotting</li>
+                        <li>Life Cycle Analyses</li>
+                        <li>Creating BOMs</li>
+                        <li>SimaPro</li>
+                        <li>Multiplexers</li>
+                        
+                    </ul>
+                </div>
+                <a href="index.html"><br><br>Return to Homepage</a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+    <div class="copyright">
+        <p>Copyright © Jason Toft.</p>
+    </div>
+</div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+    
+
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu")
+
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+
+    function closemenu(){
+        sidemenu.style.right="-200px";
+    }
+</script>
+
+</body>
+</html>

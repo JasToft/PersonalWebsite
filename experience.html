@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jason Toft Portfolio OpenAir</title>
+    <link rel="stylesheet" href="projectstyle.css">
+    <script src="https://kit.fontawesome.com/a88fdf292d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="index.html#header">Home</a></a></li>
+                    <li><a href="index.html#About">About</a></a></li>
+                    <li><a href="index.html#Experience">Experience</a></a></li>
+                    <li><a href="index.html#Projects">Projects</a></a></li>
+                    <li><a href="index.html#Contact">Contact</a></a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+        </div>
+    </div>
+
+<!---------------------TMC------------------------>
+<div id="About">
+    <div class="container">
+        <div class="header-text">
+            <h1 id="tmc"><span>TMC</span> - Clinical Assistant</h1>
+        </div>
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/300x360.png">
+            </div>
+            <div class="about-col-2">
+                <p><span><b>Thompson Medical Centre</b></span> was my summer 2023 employment. As a clinical 
+                    assistant, I was in charge of bringing in patients and performing intake history in Accuro. 
+                    I also prepared dermatology surgery trays, which included drawing up syringes of local anaesthetic 
+                    and sterilizing tools with an autoclave. I also had the opportunity to research and create patient information
+                    sheets about skin cancer and sun safety using Google Docs. Lastly, I performed medical clerical
+                    work, such as handling incoming and outgoing mail.
+                </p>
+
+                <h4>Skills Used</h4>
+                <ul>
+                    <li>Working with individuals with varying physical and mental capabilities</li>
+                    <li>Maintaining confidentiality</li>
+                    <li>Working in a fast paced environment</li> 
+                    <li>Autoclave and stanitization of medical examination rooms</li>
+                    <li>Drawing up syringes </li>
+                    <li>Google Docs</li> 
+                    <li>Research</li>
+                    <li>Clerical duties</li>
+                </ul>
+
+
+                <a href="index.html#Experience"><br>Return to Homepage</a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!---------------------Farm Boy------------------------>
+<div id="About">
+    <div class="container">
+        <div class="header-text">
+            <h1 id="farmboy"><span>Farm Boy</span> - Customer Service </h1>
+        </div>
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/300x360.png">
+            </div>
+            <div class="about-col-2">
+                <p><span><b>Farm Boy</b></span> was my part time employment from August 2022 - January 2023. 
+                    I had the opportunity to interact with staff and help them locate items throughout the store.
+                    I also was responsible for stocking shelves, organizing displays and closing the store.
+                </p>
+
+                <h4>Skills Used</h4>
+                <ul>
+                    <li>Lifting, carrying, and pushing objects over 50lbs</li>
+                    <li>Making anaesthetically pleasing displays</li>
+                    <li>Helping customers</li>
+                    <li>Incident recording</li>
+                </ul>
+                <a href="index.html#Experience"><br><br>Return to Homepage</a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!---------------------YOLO------------------------>
+<div id="About">
+    <div class="container">
+        <div class="header-text">
+            <h1 id="yolo"><span>Y.O.L.O</span> - Volunteer Event Planner </h1>
+        </div>
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/300x360.png">
+            </div>
+            <div class="about-col-2">
+                <p><span><b>Y.O.L.O</b></span> - or Youth Organizing Leadership Opportunities is an organization with the 
+                    goal of providing youth with opportunities that are organized by youth. Volunteering with Y.O.L.O. allowed
+                    me to contribute to the community during the pandemic by developing, planning, running, hosting and participating
+                    in a variety of different events, including Murder Mysteries, Trivia Nights, and Coffee Houses.  
+                </p>
+
+                <h4>Skills Used</h4>
+                <ul>
+                    <li>Planning</li>
+                    <li>Collaborating with a wide range of people on the same project</li>
+                    <li>Google Suite</li>
+                    <li>Public Speaking</li>
+                </ul>
+                <p>
+                    <br><br>
+                </p>
+                
+                <a href="index.html#Experience"><br><br><br>Return to Homepage</a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+    <div class="copyright">
+        <p>Copyright © Jason Toft</p>
+    </div>
+</div>
+
+<script>
+
+    var tablinksopenair = document.getElementsByClassName("tab-linksopenair");
+    var tabcontentsopenair = document.getElementsByClassName("tab-contentsopenair");
+
+    function opentabopenair(tabname){
+        for(tablink of tablinksopenair){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontentsopenair){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+    
+</script>
+
+
+<script>
+
+    var tablinksbiotron = document.getElementsByClassName("tab-linksbiotron");
+    var tabcontentsbiotron = document.getElementsByClassName("tab-contentsbiotron");
+
+    function opentabopenair(tabname){
+        for(tablink of tablinksbiotron){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontentsbiotron){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+    
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu")
+
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+
+    function closemenu(){
+        sidemenu.style.right="-200px";
+    }
+</script>
+
+</body>
+</html>
